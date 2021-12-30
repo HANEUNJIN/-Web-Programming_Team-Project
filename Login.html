@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import "MemberCSS.css";
+</style>
+<meta charset="EUC-KR">
+<title>데이트 가쉴? | 로그인</title>
+<link rel="icon" href="Bannericon.ico">
+</head>
+<body>
+
+<div class="div">
+<div class="title"><h2 align=center>데이트 가쉴?<br> 로그인 페이지입니다.</h2></div>
+<hr><br>
+
+<!-- submit을 누르면 LoginSorF.jsp로 값 전달 -->
+<form method="post" action="LoginSorF.jsp" name="form1">
+	<table class="table" border="1" bordercolor="#e5d0dc"  width="300" align="center" cellspacing="0" cellpadding="10">
+	
+		<tr>
+		<td class="logintext" colspan="2" align="center">로그인</td>
+		</tr>
+		
+		<tr>
+			<td>아이디</td>
+			<td><input class="inputidpw" type="text" name="tryId" size=20></td>
+		</tr>
+		
+		<tr>
+			<td>비밀번호</td>
+			<td><input class="inputidpw inputpw" type="password" name="tryPwd" size=20></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center">
+			<br>
+			
+			
+			<input class="inputbttn" type="submit" name="Submit" value="로그인">
+			
+			<button class="inputbttn" type="button" onclick="location.href='Registration.html'"><!-- 누르면 회원가입페이지로 이동하는 버튼 -->
+			회원가입
+			</button>
+			
+			<br><br>
+			 
+			<button class="inputbttn" type="button" onclick="location.href='Mainhome.html'"><!-- 누르면 홈페이지로 이동하는 버튼 -->
+			홈페이지로
+			</button>
+			<br><br>
+			
+				혹시 계정을 잊으셨나요?<br>
+				새로 가입하세요!
+			</td>
+		</tr>
+		
+	</table>
+	
+</form>
+</div>
+
+</body>
+</html>

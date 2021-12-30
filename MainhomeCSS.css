@@ -1,0 +1,259 @@
+@charset "EUC-KR";
+/*각 구조의 영역을 확인하기 위해 색을 넣음,
+body에 overflow:auto를 집어넣어 사이트 크기가 변할 때 스크롤이 자동으로 크기에 따라 생김.
+margin:0 auto로 사이트가 화면 중앙에 위치하게 함.
+*/
+body{width:1200px; height:2000px; margin:0 auto; padding:10px; overflow:auto;}
+
+.header{
+	overflow:hidden;
+	width:1200px; height:280px; padding:10px;
+}
+
+.nav{
+	overflow:hidden;
+	width:1200px; height:150px; padding:10px; 
+}
+
+.article{
+	overflow:hidden;
+	width:1200px; height:500px; padding:10px;
+}
+
+.footer{
+	width:1200px; height:200px; padding:10px; clear:both;
+}
+/*----------------------------------------------------------------------*/
+
+#loginbtn{ 
+	border-top-left-radius: 40px; 
+	border-bottom-left-radius: 40px; 
+	margin-right:-12px; 
+	
+	} 
+#signupbtn{ 
+	border-top-right-radius:px; 
+	border-bottom-right-radius: px; 
+	margin-left:-4px; 
+	} 
+#mypagebtn{ 
+	border-top-right-radius: 40px; 
+	border-bottom-right-radius: 40px; 
+	margin-left:-16px; 
+	} 
+#testpagebtn{
+	border-radius:30px;
+}
+	#btn_group button{ 
+	border: 4px solid #b6e3e9; 
+	background-color: rgba(0,0,0,0); 
+	color: black; 
+	padding: 15px; 
+	font-weight: bold;
+	font-size: 20px;
+	font-family:"나눔바른펜";
+	} 
+	#btn_group button:hover{ 
+	color:black; 
+	background-color: #d9f1f1;
+	cursor:pointer;
+	}
+	div.relative {
+    position: relative;
+    left: -170px;
+    top: -350px;
+    margin-top : 100px;
+    margin-left : 50%;
+    float:left;
+	}
+	
+	.hometitle{
+	position: relative;
+	font-family:"210 슈크림빵";
+	 font-size:50px;
+	 font-weight: bold;
+    color:white;
+    text-shadow: 0 0 1px #fff, 0 0 20px #e6e6fa, 0 0 20px #fff, 0 0 10px #ff00de, 0 0 60px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 200px #ff00de;
+	 left: 0px;
+    top: 55px;
+	}
+	
+	.mainheart{
+	position: relative;
+    left: 240px;
+    top: 115px;
+	}
+	
+	div.logo {
+    position: relative; /*relative에서 static으로 바꿈. 로고를 기준으로 버튼의 위치를 바꾸기 위해.*/
+    margin-left: 1000px;
+    top : -55px;
+    margin-left : 5%;
+    float:left;
+    cursor:pointer;
+	}
+	
+	div.tworelative{
+	position: relative;
+    left: 50px;
+    top: -163px;
+    margin-top : 100px;
+    margin-left : 50%;
+    float:right;
+	}
+	
+	div.nowtext{
+	position: relative;
+    left: 23px;
+    top: -20px;
+    float:right;
+	font-family:"나눔스퀘어";
+	color:#f15866;
+	font-weight:bold;
+	font-size:17px;
+	text-shadow: 0 0 1px #fff, 0 0 10px #e6e6fa, 0 0 10px #fff, 0 0 700px #ff00de, 0 0 20px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 100px #ff00de;
+	}	
+	
+	.blinking{ 
+	-webkit-animation:blink 0.8s ease-in-out infinite alternate; 
+	-moz-animation:blink 0.8s ease-in-out infinite alternate; 
+	animation:blink 0.8s ease-in-out infinite alternate; 
+	} 
+	@-webkit-keyframes blink{
+	 0% {opacity:0;} 
+	 100% {opacity:1;} 
+	 } 
+	 @-moz-keyframes blink{ 
+	 0% {opacity:0;} 
+	 100% {opacity:1;} 
+	 } 
+	 @keyframes blink{ 
+	 0% {opacity:0;} 
+	 100% {opacity:1;} 
+	 }
+
+	.titleblinking{ 
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate; 
+	-moz-animation:blink 1.5s ease-in-out infinite alternate; 
+	animation:blink 1.5s ease-in-out infinite alternate; 
+	} 
+	
+/*메뉴바 전체*/
+ul {
+	text-align: center; /*정렬*/
+	background-color: #e5d0dc; /*배경색*/
+	font-family:"나눔바른펜"; /*글꼴 : 선택된 요소에 우선 순위가 지정된 폰트*/
+	border-radius:50px;
+	font-size:20px;
+	font-weight: bold;
+}
+
+li a {
+	display: inline-block; /*블록태그와 인라인 태그의 중간 형태*/
+	color: black;
+	text-decoration: none; /*밑줄 설정 해제*/
+	
+	/*여백 지정*/
+	padding-top:35px; /*상단*/
+	padding-right:150px; /*오른쪽*/
+	padding-bottom:35px; /*아래*/
+	padding-left:150px; /*왼쪽*/
+}
+
+li a:hover, .dropdown:hover {
+	border-radius:50px;
+	background-color: #fae1d8; /*메뉴바에 마우스를 가져다놓을 때의 색깔변경*/
+}
+
+li.dropdown {
+	display: inline-block; /*메뉴바를 나란히 배치*/
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border-radius:25px;
+}
+
+.dropdown-content a { /*메뉴바 리스트*/
+	color: BLACK;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-family:"나눔바른펜";
+	font-size:18px;
+}
+
+.dropdown-content a:hover {
+	background-color: #E6E6E6; /*메뉴바 리스트 색깔*/
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+body{background:#ffffff;}
+
+.localandseason {
+	font-size:100px;
+	color:#571e4a;
+	
+	
+	border-radius:20%;
+	/*float:left;*/
+	margin : 20px;
+	
+	float:left;
+	cursor:pointer;
+	text-align:center;
+	width:550px;
+	height:480px;
+	}
+.localandseason:hover{
+	
+	box-shadow: 4px 4px 4px 4px #f2e2c6;
+	}
+	
+.img{
+	border-radius:20%;
+}
+/*	*{
+	padding: 0;
+	margin: 0;
+} 위에서 패딩과 마진을 넣어주어서 주석처리함*/
+
+footer {
+	font-family: 나눔스퀘어 Regular;
+    /*position: absolude; 위에서 총괄로 포지션 설정해서 주석 처리함*/
+    bottom:0;
+    /*width:1500px; 위에서 너비를 통일했으므로 주석 처리함*/
+    border-top: 1px solid #e1e1e1;
+    /*margin-top: 600px; 600px하니까 혼자 밑으로 동떨어지게 되어서 주석 처리함*/
+	
+}
+
+.foottext{
+	position: relative;
+    left: 200px;
+    top: 30px;
+}
+
+.footlogo{
+	position: relative;
+    left: 100px;
+    top: -250px;
+}
+
+#impor {
+	float:left;
+	margin: 60px 0 0 50px;
+	
+}
+#address{
+	float:right;
+	padding : 0px 300px 0px 0px;
+	margin: 50px 0 0 180px;
+}

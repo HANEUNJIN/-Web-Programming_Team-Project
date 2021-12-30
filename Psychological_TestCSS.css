@@ -1,0 +1,70 @@
+@charset "EUC-KR";
+body { text-align: center; }
+
+.title{
+	margin-left : 2%;
+	font-family:"³ª´®¹Ù¸¥Ææ";
+	font-size:40px;
+	font-weight: bold;
+	text-align: center;
+	color:white;
+    text-shadow: 0 0 1px #fff, 0 0 20px #e6e6fa, 0 0 20px #fff, 0 0 15px #ff00de, 0 0 10px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 200px #ff00de;
+}
+
+.text{
+	font-family:"³ª´®½ºÄù¾î";
+	font-size:18px;
+	font-weight: bold;
+}
+
+.inputbttn{
+	border: 2px solid #b6e3e9;
+	background-color: rgba(0,0,0,0); 
+	color: black; 
+	border-radius:20px;
+	font-family:"³ª´®¹Ù¸¥Ææ";
+	width:100px;
+	padding: 5px;
+	font-size:17px;
+	font-weight: bold;
+}
+
+.inputbttn:hover{ 
+	color:black; 
+	background-color: #d9f1f1;
+	cursor:pointer;
+	}
+
+.report{
+		border: 3px solid #fae1d8;
+		width:600px;
+		height:860px;
+		margin-bottom:5px;
+		border-radius:20px;
+	   text-align: center;
+		background-color: rgba(255,255,222);
+	}
+	
+.endreport{
+		border: 3px solid #fae1d8;
+		width:800px;
+		height:760px;
+		margin-bottom:5px;
+		border-radius:20px;
+	   text-align: center;
+		background-color: rgba(255,255,222);
+	}
+	
+.heart{
+	position: relative;
+    left: 133px;
+    top: 85px;
+}
+
+hr{
+	border:1px solid #fad4ae;
+}
+
+.endimg{
+	border-radius:30px
+	}

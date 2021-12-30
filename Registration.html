@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+
+<style>
+	@import "MemberCSS.css";
+</style>
+
+<title>데이트 가쉴? | 회원가입</title>
+<link rel="icon" href="Bannericon.ico">
+</head>
+<body>
+
+<div class="div">
+<div class="title"><h2 align="center">데이트 가쉴?<br>회원가입 페이지 입니다.</h2></div>
+<hr><br>
+
+<!-- 여기서 입력한 값들은 RegistrationCheck.jsp로 전달 -->
+<form name="form2" method="POST" action=RegistrationCheck.jsp>
+	<table class="table" width="450" align="center" border=1 bordercolor="#e5d0dc" cellspacing="0" cellpadding="10">
+	
+	<tr>
+		<td>아이디</td>
+		<td><input class="inputidpw" type=text size=20 name=userid></td>
+	</tr>
+	
+	<tr>
+		<td>비밀번호</td>
+		<td><input class="inputidpw inputpw" type=password size=20 name=password></td>
+	</tr>
+	
+	<tr>
+		<td>이름</td>
+		<td><input class="inputidpw" type=text size=20 name=username></td>
+	</tr>
+	
+	<tr>
+		<td>생년월일</td>
+		<td><input class="inputidpw" type=text size=20 name=birthday></td>
+	</tr>
+	
+	<tr>
+		<td>전화번호</td>
+		<td><input class="inputidpw" type=text size=20 name=tel></td>
+	</tr>
+	
+	<tr>
+		<td>이메일</td>
+		<td><input class="inputidpw" type=text size=20 name=email></td>
+	</tr>
+	
+	<tr>
+		<td>성별</td>
+		<td>
+		<select name=gender>
+			<option>남</option>
+			<option>여</option>
+		</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan=2 align=center><br><br>
+		<input class="inputbttn" type=submit value="확인">
+		<input class="inputbttn" type=reset value="취소">
+		<button class="inputbttn" type="button" onclick="location.href='Mainhome.html'">
+		홈페이지로
+		</button>
+		</td>
+	</tr>
+	
+	</table>
+</form>
+</div>
+
+</body>
+</html>

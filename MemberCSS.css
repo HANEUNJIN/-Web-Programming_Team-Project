@@ -1,0 +1,91 @@
+@charset "EUC-KR";
+
+/*로그인, 회원가입, 마이페이지에서 적용중인 CSS*/
+
+body{
+	width:500px; 
+	height:500px;
+	margin:0 auto; 
+	padding:10px; 
+	overflow:auto;
+	}
+
+.div{
+	padding-top:100px;
+	align:center;
+}
+
+.title{
+	font-family:"나눔바른펜";
+	font-size:22px;
+	font-weight: bold;
+	color:white;
+    text-shadow: 0 0 1px #fff, 0 0 20px #e6e6fa, 0 0 20px #fff, 0 0 15px #ff00de, 0 0 10px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 200px #ff00de;
+}
+
+hr{
+	border:1px solid #fad4ae;
+}
+
+.table{
+	border:2px solid #e5d0dc;
+	border-radius:20px;
+	font-family:"나눔스퀘어";
+	font-size:18px;
+	font-weight: bold;
+}
+
+.logintext{
+	font-family:"나눔스퀘어 ExtraBold";
+	font-weight: bold;
+	font-size:22px;
+}
+
+.inputbttn{
+	border: 2px solid #b6e3e9;
+	background-color: rgba(0,0,0,0); 
+	color: black; 
+	border-radius:20px;
+	font-family:"나눔바른펜";
+	width:100px;
+	padding: 5px;
+	font-size:17px;
+	font-weight: bold;
+}
+
+.inputidpw{ 
+	border: 2px solid #909fa6;
+	background-color: rgba(0,0,0,0); 
+	color: black; 
+	border-radius:20px;
+	font-family:"나눔스퀘어";
+	height:20px;
+}
+
+.inputbttn:hover{ 
+	color:black; 
+	background-color: #d9f1f1;
+	cursor:pointer;
+	}
+
+.inputpw{
+	font-family:"돋움";
+}
+
+select{
+	background-color: rgba(0,0,0,0); 
+	color: black; 
+	border-radius:20px;
+	font-family:"나눔바른펜";
+	font-size:17px;
+	width:50px;
+	height:30px;
+	font-weight: bold;
+}
+
+/* 링크를 눌렀을 때 보라색으로 변하지 않게 하는 코드*/
+ a { text-decoration: none; color: black; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
